@@ -67,7 +67,7 @@ nav {
     grid-column: 1/span 2;
 
 }
-
+nav ul li a {color: #ffffff;}
 nav ul {
     color: white;
     display: grid;

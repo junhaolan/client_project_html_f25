@@ -13,8 +13,9 @@ body {
     top: 5px;
     color: #00274C;
     background: white;
-    border: 3px solid #00274C;
+    border: 3px dashed #00274C;
     position: relative;
+    font-weight: bold;
 }
 
 ul {
@@ -89,14 +90,15 @@ header a:visited {
 
 
 
-header a:hover {
+
+header a:hover, header a:focus {
     border: solid 1px white;
     color: #ffffff;
     border-radius: 3px;
     padding: 0px 5px;
 }
 
-main a:hover {
+main a:hover, main a:focus {
     font-weight: bolder;
 }
 
@@ -141,6 +143,7 @@ main section:first-child h2 {
     width: 75%;
     padding: 5px;
     margin-top: 15px;
+    border-radius: 5px;
 }
 
 main section h3 {
@@ -215,14 +218,14 @@ main section:nth-child(4) a {
     color: #FFCB05;
 }
 
-main section:nth-child(4) a:hover {
+main section:nth-child(4) a:hover, main section:nth-child(4) a:focus {
     font-weight: bold;
     border: solid 1px #FFCB05;
     padding: 0px 5px;
 }
 
 
-main section:nth-child(3) a:hover {
+main section:nth-child(3) a:hover, main section:nth-child(3) a:focus {
     font-weight: bold;
     padding: 0px 2px;
 }
@@ -242,7 +245,7 @@ footer a {
     font-weight: lighter;
 }
 
-footer a:hover {
+footer a:hover, footer a:focus {
     color: #00274C;
     font-weight: bold;
 
@@ -271,7 +274,7 @@ footer a:hover {
     font-size: 12px;
 }
 
-.i1:hover {
+.i1:hover, .i1:focus {
     background-color: #2F65A7;
 }
 
@@ -280,7 +283,7 @@ footer a:hover {
     padding: 0px 2px;
 }
 
-.i1 a:hover {
+.i1 a:hover, .i1 a:focus {
     color: #FFCB05;
     font-weight: bold;
     font-size: 14px;
@@ -308,7 +311,7 @@ footer a:hover {
 .portfolio_grid:nth-child(2),
 .portfolio_grid:nth-child(3),
 .portfolio_grid:last-child {
-    align-items: center;
+
     color: #ffffff;
     background-image: url(../images/UMSI_MastersOrientation_081825_18.jpg);
 
@@ -323,4 +326,6 @@ footer a:hover {
 
 .resume_link{color:#FFFFFF;}
 
-.resume_link:hover{border: #FFCB05 1px solid;}
+.resume_link:hover, .resume_link:focus{border: #FFCB05 1px solid;}
+
+.last_grid {grid-column: 1/span 2;}

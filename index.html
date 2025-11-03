@@ -10,26 +10,25 @@
 </head>
 
 <body>
-
   <header>
     <a class="skip" href="#main">Skip to Main Content</a>
     <img src="images/UMSI_signature_vertical_informal_solidblue.png" alt="UMSI Logo">
     <h1>Welcome to the UMSI Career Development Resource Hub</h1>
-    <nav >
+    <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li class="main_page"><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resumes</a></li>
         <li><a href="networking&connections.html">Networking</a></li>
         <li><a href="portfolios.html">Portfolios</a></li>
       </ul>
     </nav>
-   
+
   </header>
 
 
 
   <main id="main">
-    <section>
+    <section id="homepage_cover">
       <h2>Your Central Hub for Career Success at UMSI</h2>
       <p>
         Ready to take the next step toward your future career? The UMSI Career Development Resource Hub is your one-stop
@@ -61,39 +60,59 @@
       </ul>
     </section>
     <section>
-      <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" class="pageimage"
-          alt="A student wears a UMSI backpack in fall on the drag.">
-      <h2>Start Here</h2>
+
+
+      <h2 class="special_heading">Start Here</h2>
       <div>
         <ul class="index_grid">
-          <li class="i1"><a href="resume.html">Resumes</a></li>
-          <li class="i1"><a href="networking&connections.html">Networking Connections</a></li>
-          <li class="i1"><a href="https://si-umich.12twenty.com/Login">Career Exploration</a></li>
-          <li class="i1"><a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach">Talk to a Career
-              Coach</a></li>
+          <li class="i1">
+            <a href="resume.html"><img src="images/resume_logo.png" alt="resume logo" class="logo">Resume</a>
+          </li>
+          <li class="i1">
+            <a href="networking&connections.html"><img src="images/network_connection_logo.png"
+                alt="networking connection logo" class="logo">Networking Connection</a>
+          </li>
+          <li class="i1">
+            <a href="https://si-umich.12twenty.com/Login"><img src="images/career_explore_logo.png"
+                alt="career explore logo" class="logo">Career Exploration</a>
+          </li>
+          <li class="i1">
+            <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach"><img
+                src="images/career_coach_logo.png" alt="talk to a career coach logo" class="logo">Talk to a
+              Career
+              Coach</a>
+          </li>
         </ul>
 
 
       </div>
       <div>
+        <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" class="pageimage"
+          alt="A student wears a UMSI backpack in fall on the drag.">
         <div class="portfolio_grid">
           <h2>Most Popular Resources</h2>
-          <div><a class="grid_header" href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0"
-              target="_blank">UMSI Resume Guide</a></div>
-          <div><a class="grid_header" href="https://umich.instructure.com/courses/137916/pages/attend-an-event" target="_blank">Attend a
-              Career Event</a></div>
-          <div><a class="grid_header" href="https://docs.google.com/document/d/18HMt79BU8ovGf9z7_P7No5tuwUS6qHNW5u0sgrepLtE/edit?tab=t.0"
-              target="_blank">Networking Tips</a></div>
-          <div><a class="grid_header"
-              href="https://docs.google.com/presentation/d/15n-XqsFEntdbkZz89K-ohf7Or1NnCt5CQNDG-6fh2a0/edit?usp=sharing"
-              target="_blank">Interview Preparation</a></div>
-          <div><a class="grid_header last_grid" href="https://si-umich.12twenty.com/Login" target="_blank">UMSI’s Exclusive Career
-              Portal</a></div>
-          </div>
+          <a class="grid_header"
+            href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0"
+            target="_blank">UMSI Resume Guide</a>
+          <a class="grid_header" href="https://umich.instructure.com/courses/137916/pages/attend-an-event"
+            target="_blank">Attend
+            Career Events</a>
+          <a class="grid_header"
+            href="https://docs.google.com/document/d/18HMt79BU8ovGf9z7_P7No5tuwUS6qHNW5u0sgrepLtE/edit?tab=t.0"
+            target="_blank">Networking Tips</a>
+          <a class="grid_header"
+            href="https://docs.google.com/presentation/d/15n-XqsFEntdbkZz89K-ohf7Or1NnCt5CQNDG-6fh2a0/edit?usp=sharing"
+            target="_blank">Interview Preparation</a>
+          <a class="grid_header last_grid" href="https://si-umich.12twenty.com/Login" target="_blank">UMSI’s
+            Exclusive Career
+            Portal</a>
+        </div>
       </div>
     </section>
+
+
+
     <section>
-      <h2>Connect with the UMSI Career Development Office</h2>
       <p>
         The UMSI Career Development Office (CDO) offers personalized support through appointments, events, and resource
         guides. <a href="https://umich.instructure.com/courses/137916" target="_blank">Visit the CDO website</a> or <a
@@ -102,10 +121,39 @@
       </p>
     </section>
 
+
+
+    <section class="contact-section">
+      <h2 class="form_header">Connect With Us</h2>
+      <p class="form_intro">Have more specific questions? Send us a message!</p>
+
+      <form class="contact-form" method="post">
+        <fieldset>
+          <legend> Contact Information </legend>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </fieldset>
+
+        <fieldset>
+          <legend> Your Questions </legend>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        </fieldset>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+
+
+
   </main>
 
-
-  
   <footer>
     <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career
         Development Office </a></p>

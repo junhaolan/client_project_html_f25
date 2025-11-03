@@ -14,12 +14,12 @@
 <body>
   <header>
     <a class="skip" href="#main">Skip to Main Content</a>
-    <img src="images/UMSI_signature_vertical_informal_solidblue.png" alt="UMSI Logo" class="pageimage">
+    <img src="images/UMSI_signature_vertical_informal_solidblue.png" alt="UMSI Logo">
     <h1>Resume Support</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resumes</a></li>
+        <li class="main_page"><a href="resume.html">Resumes</a></li>
         <li><a href="networking&connections.html">Networking</a></li>
         <li><a href="portfolios.html">Portfolios</a></li>
       </ul>
@@ -49,7 +49,7 @@
       </p>
       <img src="images/MCOMMONSDSC00772.jpg"
         alt="A student in a green sweatshirt studies on laptop in the Central Campus Classroom Building."
-        class="pageimage">
+        class="first_pageimage">
     </section>
 
 
@@ -76,41 +76,44 @@
 
 
 
-    <section>
+    <section class="resume">
       <div class="portfolio_grid">
         <h2>Resume Resources</h2>
+        <a class="grid_header"
+          href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0"
+          target="_blank">
+          UMSI Resume Guide
+        </a>
+
+        <a class="grid_header"
+          href="https://docs.google.com/document/d/1vJMfgw9nwpHN9Sy0L0RP0aNBbaDSsiLPc2vy-doac6s/edit?tab=t.0"
+          target="_blank">
+          Workshops
+        </a>
         <div>
-          <a class="grid_header"
-            href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0"
-            target="_blank">
-            UMSI Resume Guide and Rubric
-          </a><br>
+
           Comprehensive UMSI guide including tips, formatting rules, and sample accomplishments.
         </div>
         <div>
-          <a class="grid_header"
-            href="https://docs.google.com/document/d/1-EVZYH_Fic4mfLVGOXyHTSeRwBWmmi2WHSgGDLGGPEs/edit?tab=t.0"
-            target="_blank">
-            Effective Resume Bullets
-          </a><br>
-          Learn how to describe your work and impact in ways employers notice.
+          Attend Resume workshops, review video tutorials, or access additional templates.
         </div>
+        <a class="grid_header"
+          href="https://docs.google.com/document/d/1-EVZYH_Fic4mfLVGOXyHTSeRwBWmmi2WHSgGDLGGPEs/edit?tab=t.0"
+          target="_blank">
+          Resume Bullets
+        </a>
+        <a class="grid_header" href="https://umsi.instructure.com/courses/12345/pages/resume-rubric" target="_blank">
+          Resume Rubric
+        </a>
         <div>
-          <a class="grid_header" href="https://umsi.instructure.com/courses/12345/pages/resume-rubric" target="_blank">
-            Resume Rubric
-          </a> <br>
           Evaluate your resume using the same criteria as UMSI’s Career Development Office.
         </div>
         <div>
-          <a class="grid_header"
-            href="https://docs.google.com/document/d/1vJMfgw9nwpHN9Sy0L0RP0aNBbaDSsiLPc2vy-doac6s/edit?tab=t.0"
-            target="_blank">
-            Workshops and More
-          </a> <br>
-          Attend a Resume Refresh workshop, review video tutorials, or access additional templates.
+          Learn how to describe your work and impact in ways employers notice.
+
         </div>
       </div>
-      <p>
+      <p class="note">
         These resources are curated from the UMSI Career Development Office (CDO) Canvas site. <a
           href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">Book a resume
           review appointment with a CDO Career Coach</a>.
@@ -150,7 +153,8 @@
 
 
     <section>
-      <img src="images/UMSI_FallCampus_102124_12.jpg" alt="Scenes of fall color on the University of Michigan campus.">
+      <img src="images/UMSI_FallCampus_102124_12.jpg" alt="Scenes of fall color on the University of Michigan campus."
+        class="pageimage">
       <h2>Successful Resume</h2>
       <p>
         A compelling resume is more than just a record of your experiences—it is a strategic tool that introduces your
@@ -162,10 +166,34 @@
       </p>
     </section>
 
+
+
+    <section class="contact-section">
+      <h2 class="form_header">Connect With Us</h2>
+      <p class="form_intro">Have more specific questions? Send us a message!</p>
+
+      <form class="contact-form" method="post">
+        <fieldset>
+          <legend> Contact Information </legend>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </fieldset>
+
+        <fieldset>
+          <legend> Your Questions </legend>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        </fieldset>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
-
-
-
 
 
   <footer>

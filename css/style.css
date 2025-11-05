@@ -98,7 +98,7 @@ nav ul {
     color: white;
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
-    font-size: 12px;
+    font-size: 14px;
     justify-content: space-evenly;
     justify-items: center;
     align-content: stretch;
@@ -202,11 +202,11 @@ h3 {
 }
 
 p {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 ul {
-    font-size: 12px;
+    font-size: 14px;
     list-style: none;
 
 }
@@ -280,21 +280,50 @@ footer {
     color: #00274C;
     background-color: #FFCB05;
     padding: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: start;
 
+}
+
+footer img {
+    width: 25%
 }
 
 footer a {
     color: #575294;
     font-weight: lighter;
-    text-decoration: none;
 }
 
+.school_info,
+.contact_info {
+    grid-column: 1/span 2;
+    padding: 5px 0px;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
+footer img:hover {
+    opacity: 0.8s;
+    width: 28px;
+    transition: 0.2s;
+}
 
 footer a:focus {
     color: #00274C;
+    background-color: #fdfdfd;
     font-weight: bold;
-    border: solid 3px #00274C;
+    border: solid 2px #00274C;
+    border-radius: 3px;
 
+}
+
+
+
+.social_media img {
+    width: 25px;
 }
 
 
@@ -316,7 +345,7 @@ footer a:focus {
     min-height: 75px;
     align-content: center;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .i1:hover {
@@ -363,7 +392,7 @@ footer a:focus {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     padding-bottom: 25px;
 
 }
@@ -474,6 +503,10 @@ textarea:focus {
     border: #00274C solid 2px;
 }
 
+input:hover,
+textarea:hover {border: #00274C solid 2px}
+
+
 
 .contact-form legend {
     font-size: 1.2em;
@@ -546,7 +579,7 @@ textarea:focus {
 
 .page404 main section img {
     width: 100%;
-    
+
 }
 
 .page404 main section h2 {
@@ -555,12 +588,12 @@ textarea:focus {
 }
 
 .page404 main section div {
-display: grid;
-grid-template-columns: 20% 20% 20% 20%;
-height: 50px;
-justify-content: space-evenly;
-justify-items: center;
-align-items: center;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    height: 50px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
 }
 
 
@@ -852,13 +885,22 @@ align-items: center;
 
     /* footer */
 
+
     footer {
         font-family: Arial, Helvetica, sans-serif;
         color: #00274C;
         background-color: #FFCB05;
         padding: 10px;
-        padding-left: 40px;
+        display: grid;
+        grid-template-columns: 50% 30%;
+        justify-items: start;
+        justify-content: space-around;
+        align-items: end;
 
+    }
+
+    footer img {
+        width: 25%
     }
 
     footer a {
@@ -866,12 +908,30 @@ align-items: center;
         font-weight: lighter;
     }
 
-    footer a:hover,
-    footer a:focus {
+    .school_info {
+        grid-column: 1/span 2;
+        padding: 5px 0px;
+    }
+
+    .contact_info {
+        grid-column: 1/span 1;
+    }
+
+    footer p a:focus {
         color: #00274C;
         font-weight: bold;
+        border: solid 2px #00274C;
+        border-radius: 3px;
+
 
     }
+
+
+    .social_media img {
+        width: 36px;
+    }
+
+    .social_media img:hover {width: 40px; opacity: 0.8;}
 
 
 
@@ -1175,85 +1235,86 @@ align-items: center;
 
 
     /* 404 page */
-.page404 header {
-    margin-bottom: 0px;
+    .page404 header {
+        margin-bottom: 0px;
 
-}
+    }
 
-.page404 main {
-    color: #fdfdfd;
-    background-color: #2F65A7;
-    margin-top: 0px;
-    border-top: #2F65A7 5px solid;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 25px;
-}
+    .page404 main {
+        color: #fdfdfd;
+        background-color: #2F65A7;
+        margin-top: 0px;
+        border-top: #2F65A7 5px solid;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 25px;
+    }
 
-.page404 main h1 {
-    text-align: center;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    justify-self: center;
-    padding: 0px;
+    .page404 main h1 {
+        text-align: center;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        justify-self: center;
+        padding: 0px;
 
-}
+    }
 
-.page404 main p {
-    width: 75%;
-    text-align: center;
-    justify-self: center;
-    margin-top: 10px;
-}
+    .page404 main p {
+        width: 75%;
+        text-align: center;
+        justify-self: center;
+        margin-top: 10px;
+    }
 
-.page404 main a {
-    color: #fdfdfd;
-    text-decoration: none;
-}
+    .page404 main a {
+        color: #fdfdfd;
+        text-decoration: none;
+    }
 
 
-.page404 main a:hover, .page404 main a:focus {
-    color: #FFCB05;
-    text-decoration: none;
-    font-size: 30px;
-}
+    .page404 main a:hover,
+    .page404 main a:focus {
+        color: #FFCB05;
+        text-decoration: none;
+        font-size: 30px;
+    }
 
-.page404 main section {
-    background-color: #2F65A7;
-    color: #FFFFFF;
-    display: grid;
-    grid-template-columns: 40% 50%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    justify-items: center;
-}
+    .page404 main section {
+        background-color: #2F65A7;
+        color: #FFFFFF;
+        display: grid;
+        grid-template-columns: 40% 50%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+    }
 
-.page404 main section img {
-    width: 100%;
-    grid-row: 1/span 4;
-    
-}
+    .page404 main section img {
+        width: 100%;
+        grid-row: 1/span 4;
 
-.page404 main section h2 {
-    text-align: center;
-    padding: 0px;
-    grid-row: 2;
-    font-size: 36px;
-}
+    }
 
-.page404 main section div {
-font-size: 24px;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-display: grid;
-grid-column: 2;
-grid-template-columns: 50% 50%;
-height:70px;
-justify-content: space-evenly;
-justify-items: center;
-align-items: center;
-align-content: space-between;
-grid-row:3;
-min-width: 350px;
-text-align: left;
-}
+    .page404 main section h2 {
+        text-align: center;
+        padding: 0px;
+        grid-row: 2;
+        font-size: 36px;
+    }
+
+    .page404 main section div {
+        font-size: 24px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display: grid;
+        grid-column: 2;
+        grid-template-columns: 50% 50%;
+        height: 70px;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+        align-content: space-between;
+        grid-row: 3;
+        min-width: 350px;
+        text-align: left;
+    }
 }

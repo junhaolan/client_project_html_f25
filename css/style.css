@@ -305,9 +305,9 @@ footer a:hover {
     font-weight: bold;
 }
 
-footer img:hover {
-    opacity: 0.8s;
-    width: 28px;
+footer div a img:hover{
+    opacity: 0.8;
+    width: 280px;
     transition: 0.2s;
 }
 
@@ -317,6 +317,7 @@ footer a:focus {
     font-weight: bold;
     border: solid 2px #00274C;
     border-radius: 3px;
+
 
 }
 
@@ -534,11 +535,15 @@ textarea:hover {
 }
 
 .contact-form button:active,
-.contact-form button:hover {
+.contact-form button:hover,
+.contact-form button:focus {
     background-color: #2F65A7;
     color: #fdfdfd;
 }
 
+.contact-form button:focus {
+    border: #FFCB05 solid 3px;
+}
 
 /* 404 page */
 .page404 header {

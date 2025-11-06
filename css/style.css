@@ -1,4 +1,4 @@
-/*all css are writen by my own*/
+/*all css are writen by my own. Form template html is from a public website. Form css is written by myself.*/
 
 body {
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -504,7 +504,10 @@ textarea:focus {
 }
 
 input:hover,
-textarea:hover {border: #00274C solid 2px}
+textarea:hover {
+    border: #00274C solid 2px;
+    border-radius: 3px;
+}
 
 
 
@@ -931,7 +934,10 @@ textarea:hover {border: #00274C solid 2px}
         width: 36px;
     }
 
-    .social_media img:hover {width: 40px; opacity: 0.8;}
+    .social_media img:hover {
+        width: 40px;
+        opacity: 0.8;
+    }
 
 
 
